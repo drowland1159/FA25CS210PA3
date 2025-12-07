@@ -155,12 +155,6 @@ bool dfs(int ent_r, int ent_c, vector<vector<int>>& maze,
         }
     }
     return false;
-    /** We need to
-     *  Call the DFS
-     *  Track the Visted Arrays in the "visited" vector
-     *  Then fill the parent_r and parent_c.
-     *      For this it would be parent_r[ent r][ent c] = parents row
-     * **/
 }
 
 
@@ -201,9 +195,7 @@ int main() {
     // STUDENT WORK:
     // Call your DFS, track visited, and fill parent_r and parent_c
     // ------------------------------------------------------
-    cout << "Before found" << endl;
     bool found = dfs(ent_r, ent_c, maze, visited, parent_r, parent_c, exit_r, exit_c);
-    cout << "After found" << endl;
 
     // ------------------------------------------------------
     // STUDENT WORK:
